@@ -1,0 +1,18 @@
+[package]
+name = "pipez-native"
+version = "1.2.33"
+edition = "2021"
+rust-version = "1.95"
+license = "MIT"
+description = "Pipez native mod - pipe network logic for items, fluids, energy, and gases"
+repository = "https://github.com/horizon-mods/pipez-native"
+
+[lib]
+# This exact source is also injected as a same-crate module by horizon-mixins.
+path = "mixins/pipez/runtime.rs"
+
+[workspace]
+resolver = "2"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
